@@ -1,0 +1,67 @@
+div {
+    border: 10px solid darkcyan;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+#red {
+    background-color: red;
+}
+
+#green {
+    background-color: green;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#orange {
+    background-color: orange;
+}
+
+#purple {
+    background-color: purple;
+}
+
+#brown {
+    background-color: brown;
+}
+
+/* START BELOW THIS LINE */
+/* 1 */
+#red:hover {
+    transition-property: all;
+    width: 300px;
+    transition-duration: 3s;
+}
+
+#red {
+    transition-property: all;
+    width: 150px;
+    transition-duration: 3s;
+}
+
+/* 2 */
+#green:hover {
+    background-color: yellow;
+    transition: transform 2s linear 1s;
+    transform: rotate(360deg);
+}
+#green {
+    transition: transform 2s linear 1s;
+    transform: rotate(-360deg);
+}
+
+/* 3 */
+#blue {
+    animation-name: expand;
+    animation-duration: 8s;
+}
+
+@keyframes expand {
+    50% {
+        width: 450px;
+    }
+}
